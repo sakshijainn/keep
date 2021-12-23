@@ -45,13 +45,13 @@ code {
 }
 
 .note.new {
-	background-color: #67d7cc;
+	background-color: whitesmoke;
 }
 
 textarea {
 	border: none;
 	resize: none;
-	background-color: #67d7cc;
+	background-color: whitesmoke;
 }
 
 textarea:focus {
@@ -71,7 +71,10 @@ textarea:focus {
 }
 
 .note {
-	background-color: #fef68a;
+	background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%);
 	border-radius: 10px;
 	padding: 1rem;
 	min-height: 170px;
@@ -80,6 +83,30 @@ textarea:focus {
 	justify-content: space-between;
 	white-space: pre-wrap;
 }
+
+.note:nth-child(4n + 1) {
+	background: linear-gradient(
+	  90deg,
+	  rgba(93, 12, 255, 1) 0%,
+	  rgba(155, 0, 250, 1) 100%
+	);
+  }
+  
+  .note:nth-child(4n + 2) {
+	background: linear-gradient(
+	  90deg,
+	  rgba(255, 12, 241, 1) 0%,
+	  rgba(250, 0, 135, 1) 100%
+	);
+  }
+  
+  .note:nth-child(4n + 3) {
+	background: linear-gradient(
+	  90deg,
+	  rgba(20, 159, 255, 1) 0%,
+	  rgba(17, 122, 255, 1) 100%
+	);
+  }
 
 .note-footer {
 	display: flex;

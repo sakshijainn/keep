@@ -21,7 +21,7 @@ function AddNotes({handleAddNote}) {
     }
     return (
         <div className ="note new">
-            <textarea 
+            <textarea className ="textareaa" 
             value={noteText}
             onChange ={handleChange}
             rows="8" cols="10"
